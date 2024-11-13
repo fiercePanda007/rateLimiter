@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rate Limiter Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rate Limiter Test</h1>
+      <button id="sendRequest">Send Request</button>
+      <div id="responseArea">
+        <h3>Response:</h3>
+        <pre id="response"></pre>
+      </div>
+      <div id="rateLimitInfo">
+        <h3>Rate Limit Headers:</h3>
+        <p>
+          <strong>X-Ratelimit-Remaining:</strong>
+          <span id="remaining">N/A</span>
+        </p>
+        <p><strong>X-Ratelimit-Limit:</strong> <span id="limit">N/A</span></p>
+        <p>
+          <strong>X-Ratelimit-Retry-After:</strong>
+          <span id="retryAfter">N/A</span>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
